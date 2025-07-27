@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import laravel from "laravel-vite-plugin";
 import compression from "vite-plugin-compression";
-import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
     server: {
@@ -19,7 +18,6 @@ export default defineConfig({
         manifest: true,
     },
     plugins: [
-        tailwindcss(),
         laravel({
             input: ["resources/css/app.css", "resources/js/app.tsx"],
             refresh: true,
